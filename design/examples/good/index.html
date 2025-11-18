@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Barista Hiring Day | Good Example</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+3:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #c46a2b;
+      --bg: #f8f5f0;
+      --text: #222;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Source Sans 3', 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 48px 24px 24px;
+      gap: 12px;
+      background: radial-gradient(circle at top, rgba(196, 106, 43, 0.35), transparent), var(--bg);
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 52px);
+      letter-spacing: 1px;
+      margin: 0;
+    }
+    .hero p.tagline {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .hero .pill {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .grid {
+      max-width: 960px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      padding: 0 24px 48px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid var(--accent);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .card p {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .cta {
+      text-align: center;
+      padding-bottom: 48px;
+    }
+    .cta a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 15px 35px rgba(196, 106, 43, 0.35);
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #6b635c;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <p class="pill">2025年4月新規オープン</p>
+    <h1>Barista Hiring Day</h1>
+    <p class="tagline">Craft Coffee. Calm Space. Caring Team.</p>
+  </header>
+
+  <section class="grid">
+    <article class="card">
+      <h2>We Believe</h2>
+      <p>美味しい一杯は、手仕事とチームワークから生まれます。お客様が落ち着いて過ごせる空間を一緒に作りませんか。</p>
+    </article>
+    <article class="card">
+      <h2>Who You Are</h2>
+      <p>接客が好きで、丁寧な動作を大切にできる方。未経験でも、コーヒーを学んでみたい気持ちがあれば歓迎です。</p>
+    </article>
+    <article class="card">
+      <h2>Details</h2>
+      <p>勤務地: 渋谷区富ヶ谷<br />勤務時間: 週3日〜 / 4時間〜<br />時給: 1,400円〜（研修期間あり）</p>
+    </article>
+    <article class="card">
+      <h2>How To Apply</h2>
+      <p>履歴書・ポートフォリオ（任意）を `hello@calmground.coffee` までお送りください。3営業日以内に返信します。</p>
+    </article>
+  </section>
+
+  <div class="cta">
+    <a href="mailto:hello@calmground.coffee?subject=Barista%20Hiring">面談リクエストを送る</a>
+  </div>
+
+  <footer>Calm Ground Coffee | 東京都渋谷区富ヶ谷 3-12-9</footer>
+</body>
+</html>
